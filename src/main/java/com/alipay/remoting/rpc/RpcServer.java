@@ -181,6 +181,7 @@ public class RpcServer extends AbstractRemotingServer {
         super(port);
         /* server connection management feature enabled or not, default value false, means disabled. */
         if (manageConnection) {
+            //开启服务器管理连接开关。
             this.switches().turnOn(GlobalSwitch.SERVER_MANAGE_CONNECTION_SWITCH);
         }
     }
